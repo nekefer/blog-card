@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+}
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/static/Figtree-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4d04e;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    /* align-items: center; */
+    width: 384px;
+    height: 522px;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 24px;
+}
+
+.card-img{
+    width: 100%;
+    height: 200px;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card-content .tag{
+    position: relative;
+    width: 82px;
+    height: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4d04e;
+    font-weight: 600;
+    border-radius: 4px;    
+}
+
+.card-content .title{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.card-content .description{
+    color: #7F7F7F;
+}
+
+.card-author{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-author img{
+    width: 32px;
+    height: 32px;    
+    border-radius: 50%;
+}
+
+.card-author .name{
+    font-weight: 600;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
